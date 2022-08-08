@@ -97,7 +97,11 @@ function findLongestWord(arr){
     console.log(length[0]);
 }
 
-words.sort((a.b) => b.length - a.length)[0].length
+// or
+
+const findLongestWord = (words) => {
+  return words.sort((a,b) => b.length - a.length)[0].length;
+};
 
 // time complexity: O(n log (n))
 // space complexity: O(n)
