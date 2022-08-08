@@ -15,7 +15,8 @@ function addToZero (arr){
     console.log(result)
   }
   
-//   O(n^2)
+//   Time complexity: O(n^2)
+// space complexity: O(n)
 
 // For example:
 
@@ -39,7 +40,8 @@ function hasUniqueCharacters(word) {
         console.log(new Set(word).size == word.length);
       }
 
-    //   O(1)
+    //  time complexity: O(1)
+    // space complexity: O(n)
 
 // For example:
 
@@ -71,7 +73,12 @@ function isPangram(text){
 
 }
 
-// O(n)
+// or
+
+const pangram = (string) => new Set(string.toLowerCase().match(/[a-z]/g)).size ===26;
+
+// Time complexity: O(n)
+// Space complexity O(n)
 
 // For example:
 
@@ -90,7 +97,10 @@ function findLongestWord(arr){
     console.log(length[0]);
 }
 
-// O(n)
+words.sort((a.b) => b.length - a.length)[0].length
+
+// time complexity: O(n log (n))
+// space complexity: O(n)
 
 // For example:
 
